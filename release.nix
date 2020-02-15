@@ -7,6 +7,7 @@ let
 in
 {
   trezord = pkgs.trezord.overrideAttrs (old: rec {
-    src = pkgs.lib.cleanSource ../.;
+    name = "trezord-master";
+    src = pkgs.lib.cleanSource ./.;
   });
 }
